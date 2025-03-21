@@ -28,13 +28,51 @@
                     <ul class="nav__list">
                         <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
                         <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#services" class="nav__link">Services</a></li>
+                        <li class="nav__item dropdown">
+                            <a href="#services" class="nav__link">Articles ▾</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="eduland-master/index.html">IAS Membership</a></li>
+                                <li><a href="SIS/index.html">Sister Societies</a></li>
+                                <li><a href="#service3">Topic 3</a></li>
+                            </ul>
+                        </li>
                         <li class="nav__item"><a href="#menu" class="nav__link">Menu</a></li>
                         <li class="nav__item"><a href="#contact" class="nav__link">Contact us</a></li>
-
                         <li><i class='bx bx-moon change-theme' id="theme-button"></i></li>
                     </ul>
                 </div>
+
+                <style>
+                    .dropdown {
+                        position: relative;
+                    }
+                
+                    .dropdown-menu {
+                        display: none;
+                        position: absolute;
+                        background-color: white;
+                        list-style: none;
+                        padding: 0;
+                        margin: 0;
+                        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                        border-radius: 5px;
+                        min-width: 120px;
+                    }
+                
+                    .dropdown-menu li {
+                        padding: 10px;
+                    }
+                
+                    .dropdown-menu li a {
+                        text-decoration: none;
+                        color: black;
+                        display: block;
+                    }
+                
+                    .dropdown:hover .dropdown-menu {
+                        display: block;
+                    }
+                </style>
 
                 <div class="nav__toggle" id="nav-toggle">
                     <i class='bx bx-menu'></i>
